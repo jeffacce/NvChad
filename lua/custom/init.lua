@@ -6,8 +6,7 @@
 --   command = "tabdo wincmd =",
 -- })
 
-local opt = vim.opt
-local g = vim.g
-
-opt.clipboard = ""
+vim.opt.clipboard = ""
+vim.wo.relativenumber = true
+vim.api.nvim_create_autocmd("TermOpen", { command = "setlocal nonumber norelativenumber" })
 
