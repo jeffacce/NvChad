@@ -55,6 +55,7 @@ local plugins = {
 
   {
     "HiPhish/nvim-ts-rainbow2",
+    lazy = false,
     dependencies = "nvim-treesitter/nvim-treesitter",
   },
 
