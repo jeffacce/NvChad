@@ -7,6 +7,12 @@ local options = {
   },
 
   indent = { enable = true },
+
+  rainbow = {
+    enable = true,
+    query = "rainbow-parens",
+    strategy = require("ts-rainbow").strategy.global,
+  },
 }
 
 return options

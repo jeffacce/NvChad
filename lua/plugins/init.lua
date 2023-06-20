@@ -265,6 +265,17 @@ local default_plugins = {
       require("which-key").setup(opts)
     end,
   },
+
+  {
+    "github/copilot.vim",
+    cmd = "Copilot",
+    event = "InsertEnter",
+  },
+
+  {
+    "HiPhish/nvim-ts-rainbow2",
+    dependencies = "nvim-treesitter/nvim-treesitter",
+  },
 }
 
 local config = require("core.utils").load_config()
